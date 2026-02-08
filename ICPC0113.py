@@ -8,7 +8,7 @@ for _ in range(int(input())):
 
     for i in range(2, MAXN):
         if is_prime[i]:
-            for j in range(i*2, MAXN, i):
+            for j in range(i*i, MAXN, i):
                 is_prime[j] = False
     
     check = set()
