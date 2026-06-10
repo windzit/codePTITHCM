@@ -1,0 +1,124 @@
+{
+    "flights": [
+        {
+            "year": "1950",
+            "month": "March",
+            "passengers": 210
+        },
+        {
+            "year": "1949",
+            "month": "January",
+            "passengers": 112
+        },
+        {
+            "year": "1951",
+            "month": "March",
+            "passengers": 220
+        },
+        {
+            "year": "1950",
+            "month": "March",
+            "passengers": 198
+        },
+        {
+            "year": "1952",
+            "month": "December",
+            "passengers": 380
+        },
+        {
+            "year": "1949",
+            "month": "November",
+            "passengers": 340
+        },
+        {
+            "year": "1950",
+            "month": "February",
+            "passengers": 195
+        },
+        {
+            "year": "1951",
+            "month": "July",
+            "passengers": 290
+        },
+        {
+            "year": "1950",
+            "month": "October",
+            "passengers": 330
+        },
+        {
+            "year": "1949",
+            "month": "May",
+            "passengers": 223
+        },
+        {
+            "year": "1952",
+            "month": "April",
+            "passengers": 250
+        },
+        {
+            "year": "1951",
+            "month": "December",
+            "passengers": 370
+        },
+        {
+            "year": "1950",
+            "month": "January",
+            "passengers": 180
+        },
+        {
+            "year": "1949",
+            "month": "September",
+            "passengers": 289
+        },
+        {
+            "year": "1952",
+            "month": "June",
+            "passengers": 280
+        },
+        {
+            "year": "1951",
+            "month": "October",
+            "passengers": 340
+        },
+        {
+            "year": "1949",
+            "month": "March",
+            "passengers": 178
+        },
+        {
+            "year": "1952",
+            "month": "February",
+            "passengers": 215
+        },
+        {
+            "year": "1950",
+            "month": "December",
+            "passengers": 360
+        },
+        {
+            "year": "1951",
+            "month": "May",
+            "passengers": 255
+        },
+        {
+            "year": "1949",
+            "month": "July",
+            "passengers": 275
+        },
+        {
+            "year": "1950",
+            "month": "March",
+            "passengers": 205
+        },
+        {
+            "year": "1951",
+            "month": "March",
+            "passengers": 230
+        },
+        {
+            "year": "1949",
+            "month": "January",
+            "passengers": 120
+        }
+    ]
+}
