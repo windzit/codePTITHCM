@@ -6,11 +6,12 @@ class Edge:
         this.points = points
         this.leng = len(points)
 
-    def getEdge(this, index : int):
-        idx = index * 4
+    def getEdge(this,  point1: int, point2: int):
+        p1 = point1 * 2
+        p2 = point2 * 2
 
-        if idx + 3 < this.leng:
-            return math.hypot(this.points[idx] - this.points[idx + 2], this.points[idx + 1] - this.points[idx + 3])
+        if p2 + 1 < this.leng and p1 + 1 < this.leng:
+            return math.sqrt((this.points[p1] - this.points[p2])**2 + (this.points[p1 + 1] - this.points[p2 + 1])**2)
         
         return -1
 
@@ -24,5 +25,6 @@ for _ in range(N):
 remote = Edge(datas)
 
 for i in range(N):
-    e = remote.getEdge(i)
+    idx = i * 2
+    e = remote.getEdge(idx, idx + 1)
     print("INVALID" if e < 0 else f'{round(e, 4):.4f}')
