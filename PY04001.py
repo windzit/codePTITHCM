@@ -1,15 +1,28 @@
 #LỚP POINT
+import math
+
 class Edge:
-    def addPoint(self):
-        x1, y1, x2, y2 = map(float, input().split())
-        self.p1, self.p2 = [x1, y1], [x2, y2]
+    def __init__ (this, points : list):
+        this.points = points
+        this.leng = len(points)
 
-    def getEdge(self):
-        # math.hypot(self.p1[0] - self.p2[0], self.p1[1] - self.p2[1])
-        return ((self.p1[0] - self.p2[0])**2 + (self.p1[1] - self.p2[1])**2) ** 0.5
-    
+    def getEdge(this, index : int):
+        idx = index * 4
 
-remote = Edge()
-for _ in range(int(input())):
-    remote.addPoint()
-    print(f"{remote.getEdge():.4f}")
+        if idx + 3 < this.leng:
+            return math.hypot(this.points[idx] - this.points[idx + 2], this.points[idx + 1] - this.points[idx + 3])
+        
+        return -1
+
+
+datas = []
+N = int(input())
+
+for _ in range(N):
+    datas.extend( [float(num) for num in input().split()] )
+
+remote = Edge(datas)
+
+for i in range(N):
+    e = remote.getEdge(i)
+    print("INVALID" if e < 0 else f'{round(e, 4):.4f}')
