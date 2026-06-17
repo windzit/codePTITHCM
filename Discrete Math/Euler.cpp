@@ -40,9 +40,8 @@ vector<int> EulerCycle (int start)
 
             s.pop();
         }
-
-        reverse(CE.begin(), CE.end());
-
-        return CE;
     }
+
+    reverse(CE.begin(), CE.end());
+    return CE;
 }
