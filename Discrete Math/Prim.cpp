@@ -27,9 +27,9 @@ void Prim (int a[][MAX])
 
         for (int j=0; j<n; j++)
         {
-            if (!visited[j] && key[i] < MIN)
+            if (!visited[j] && key[j] < MIN)
             {
-                MIN = key[i];
+                MIN = key[j];
                 u = j;
             }
         }
